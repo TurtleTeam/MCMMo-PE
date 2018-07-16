@@ -1,0 +1,6 @@
+name: MCMMO-PE
+author: LilCrispy209 & corytortoise
+version: 3.0.0
+description: Pocketmine port of MCMMO
+main: mcmmo\Main
+api: [3.0.3]
