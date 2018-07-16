@@ -16,10 +16,9 @@ class Update extends PluginTask {
 
     public function __construct(Main $plugin) {
         $this->plugin = $plugin;
-        parent::__construct($plugin);
     }
 
-    public function onRun($currentTick) {
+    public function onRun(int $currentTick) {
         $this->plugin->top = $this->plugin->getTop();
     }
 

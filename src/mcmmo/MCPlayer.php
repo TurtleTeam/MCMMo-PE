@@ -8,14 +8,9 @@
 
 namespace mcmmo;
 
-use mcmmo\Main;
 use pocketmine\command\CommandSender;
 use pocketmine\level\sound\EndermanTeleportSound;
-use pocketmine\level\sound\NoteblockSound;
-use pocketmine\level\sound\PopSound;
 use pocketmine\Player;
-use pocketmine\event\player\ExperienceChangeEvent;
-
 
 class MCPlayer {
 

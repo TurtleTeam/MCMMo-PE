@@ -18,15 +18,12 @@ use pocketmine\event\block\BlockPlaceEvent;
 use pocketmine\event\Listener;
 use pocketmine\event\player\PlayerInteractEvent;
 use pocketmine\item\Item;
-use pocketmine\item\Armor;
-use pocketmine\level\Location;
 use pocketmine\level\particle\CriticalParticle;
 use pocketmine\Player;
 use pocketmine\event\player\PlayerJoinEvent;
 use pocketmine\event\player\PlayerQuitEvent;
 use pocketmine\event\entity\EntityDamageEvent;
 use pocketmine\event\entity\EntityDamageByEntityEvent;
-use pocketmine\inventory\PlayerInventory;
 use pocketmine\event\player\PlayerItemDropEvent;
 use pocketmine\utils\Color;
 
@@ -89,7 +86,7 @@ class EventListener implements Listener {
                 }
                     //BERSERK
                     if($ability == MCPlayer::UNARMED && $item == 0) {
-                        $event->setModifier($event->getFinalDamage() + 2, 2);
+                        $e->setModifier($e->getFinalDamage() + 2, 2);
                     }
                     //SWORDS
                     if($ability == MCPlayer::SWORDS && $item == 267 || $ability == MCPlayer::SWORDS && $item == 268 || $ability == MCPlayer::SWORDS && $item == 272 || $ability == MCPlayer::SWORDS && $item == 276 || $ability == MCPlayer::SWORDS && $item == 283) {

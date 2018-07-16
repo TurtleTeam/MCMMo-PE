@@ -19,7 +19,7 @@ class TapLog extends Task {
         $this->plugin = $plugin;
     }
 
-    public function onRun($currentTick) {
+    public function onRun(int $currentTick) {
         foreach($this->plugin->ability as $player => $time) {
             if($this->plugin->ability[$player]["time"] <= time()) {
                 unset($this->plugin->ability[$player]);

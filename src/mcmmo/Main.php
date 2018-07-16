@@ -4,10 +4,8 @@ namespace mcmmo;
 
 use mcmmo\Commands\MCStats;
 use mcmmo\Commands\MCTop;
-use mcmmo\MCPlayer;
 use pocketmine\plugin\PluginBase;
 use pocketmine\Player;
-use mcmmo\EventListener;
 
 class Main extends PluginBase {
 
